@@ -10,6 +10,6 @@ Sistema que coleta dados de câmeras de contagem de fluxo e centraliza conteúdo
    entre no diretorio raiz do projeto e execute o comando:
         `node app.js`
 
-#### 3 - Para esse projeto voce pode criar um banco de dados de seu preferencia e configurar no arquivo `./config/database.js
+#### 3 - Para esse projeto voce pode criar um banco de dados de seu preferencia e configurar no arquivo `./config/database.js`
     
   
