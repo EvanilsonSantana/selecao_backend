@@ -1,31 +1,42 @@
-const camera = (sequelize, DataTypes) => {
+const dados_camera = (sequelize, DataTypes) => {
     const Camera = sequelize.define('Camera', {
+        id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true
+        },
+        
         ip: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
         },
 
         usuario: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
 
         },
         modelo: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
 
         },
         data_instalacao: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
 
         },
         contagem: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
 
         }
     }, {
-        tableName: 'camera'
+        tableName: 'dados_camera'
     })
 
     return Camera
 
 }
 
-module.exports = camera
+module.exports = dados_camera

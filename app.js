@@ -1,8 +1,9 @@
 const express = require('express');
 const routers = require('./api');
-const router = require('./api/camera');
 const { sequelize } = require('./models/index')
 const app = express();
+
+
 
 app.use(express.json())
 app.use('/', routers)
